@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HRMovie - Movie On Big Screen Shows On Cinemas Relationship Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Helvetica;
+        }
+
+        #relationship-form {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <div class="logo">
+            <img src="img/logo.png" height="50px">
+        </div>
+        <div class="centered-nav">
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="/about/">About</a>
+                <a href="imprint.html">Imprint</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Input Forms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="user_input_page.html">Users Input</a>
+                        <a href="actors_input_page.html">Actors Input</a>
+                        <a href="movies_input_page.html">Movies Input</a>
+                        <a href="cinemas_input_page.html">Cinemas Input</a>
+                        <a href="movies_on_ott_platforms.html">Movies OTT Input</a>
+                        <a href="director_input_page.html">Directors Input</a>
+                        <a href="movies_has_directors_relationship.html">Movie Director Relationship</a>
+                        <a href="movies_has_actors_relationship.html">Movie Actor Relationship</a>
+                        <a class="active" href="big_screen_shows_on_relationship.html">Big Screen Shows on Relationship</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Search Forms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Top_movies_by_genre.html">Top movies by genre!</a>
+                        <a href="Directors_with_more_than_one_movie.html">Directors with more than one movie!</a>
+                        <a href="actors_awards.html">Actors/Actresses who have won awards!</a>
+                    </div>
+                </div>
+
+                <a href="/movie_profiles/">Movie Profiles</a>
+                <a href="maintenance.html">Maintenance</a>
+            </ul>
+        </div>
+        <ul>
+            <a href="/login/" class="login-signup">Login/Sign Up</a>
+        </ul>
+    </div>
+
+    <section id="relationship-form">
+        <h2>Movie On Big Screen Shows On Cinemas Relationship Form</h2>
+        <div class="relationship-form">
+            <form action="process_Big_screen_shows_on_relationship.php" method="post">
+                <label for="movieOnBigScreen">Select a Movie On Big Screen:</label>
+                <select name="movieOnBigScreen" required>
+                    <option value="1">The Shawshank Redemption</option>
+                    <option value="2">The Godfather</option>
+                    <option value="3">The Dark Knight</option>
+                    <option value="4">Pulp Fiction</option>
+                    <option value="5">The Lord of the Rings: The Return of the King</option>
+                    <option value="6">Schindlers List</option>
+                    <option value="7">Fight Club</option>
+                    <option value="8">Forrest Gump</option>
+                    <option value="9">Inception</option>
+                    <option value="10">The Matrix</option>
+                    <option value="11">The Silence of the Lambs</option>
+                    <option value="12">The Departed</option>
+                    <option value="13">Gladiator</option>
+                    <option value="14">The Usual Suspects</option>
+                    <option value="15">Saving Private Ryan</option>
+                    <option value="16">The Green Mile</option>
+                    <option value="17">The Pianist</option>
+                    <option value="18">The Social Network</option>
+                    <option value="19">The Grand Budapest Hotel</option>
+                    <option value="20">La La Land</option>
+                </select>
+
+                <label for="cinema">Select a Cinema:</label>
+                <select name="cinema" required>
+                    <option value="1">Cinema 1</option>
+                    <option value="2">Cinema 2</option>
+                    <option value="3">Cinema 3</option>
+                    <option value="4">Cinema 4</option>
+                    <option value="5">Cinema 5</option>
+                    <option value="6">Cinema 6</option>
+                    <option value="7">Cinema 7</option>
+                    <option value="8">Cinema 8</option>
+                    <option value="9">Cinema 9</option>
+                    <option value="10">Cinema 10</option>
+                    <option value="11">Cinema 11</option>
+                    <option value="12">Cinema 12</option>
+                    <option value="13">Cinema 13</option>
+                    <option value="14">Cinema 14</option>
+                    <option value="15">Cinema 15</option>
+                    <option value="16">Cinema 16</option>
+                    <option value="17">Cinema 17</option>
+                    <option value="18">Cinema 18</option>
+                    <option value="19">Cinema 19</option>
+                    <option value="20">Cinema 20</option>
+                </select>
+
+                <label for="showTime">Select Show Time:</label>
+                <select name="showTime" required>
+                    <option value="12:00">12:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:15">15:15</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="01:15">01:15</option>
+                    <option value="02:30">02:30</option>
+                    <option value="04:20">04:20</option>
+                    <option value="06:15">06:15</option>
+                    <option value="08:00">08:00</option>
+                </select>
+
+                <label for="price">Select Price:</label>
+                <select name="price" required>
+                    <option value="5">5 euros</option>
+                    <option value="10">10 euros</option>
+                    <option value="15">15 euros</option>
+                    <option value="20">20 euros</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <div class="footer">
+        <a>
+            <br>
+            <p>This website is student lab work and does not necessarily reflect Jacobs University Bremen opinions. </br>
+            Jacobs University Bremen does not endorse this site, nor is it checked by Jacobs University Bremen regularly, nor is it part of the official Jacobs University Bremen web presence.</p>
+            <p>For each external link existing on this website, we initially have checked that the target page does not contain contents which is illegal wrt. German jurisdiction. </br>
+            However, as we have no influence on such contents, this may change without our notice. Therefore we deny any responsibility for the websites referenced through our external links from here.</p>
+            <p>No information conflicting with GDPR is stored in the server.</p>
+            <p>2023 HRMovie</p>
+            <br>
+        </a>
+    </div>
+</body>
+</html>
+

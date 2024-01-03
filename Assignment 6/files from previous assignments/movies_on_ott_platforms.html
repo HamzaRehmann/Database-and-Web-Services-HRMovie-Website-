@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HRMovie - Movies on OTT Platform Input Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Helvetica;
+        }
+
+        #movies-on-ott-input {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <div class="logo">
+            <img src="img/logo.png" height="50px">
+        </div>
+        <div class="centered-nav">
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="/about/">About</a>
+                <a href="imprint.html">Imprint</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Input Forms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="user_input_page.html">Users Input</a>
+                        <a href="actors_input_page.html">Actors Input</a>
+                        <a href="movies_input_page.html">Movies Input</a>
+                        <a href="cinemas_input_page.html">Cinemas Input</a>
+                        <a class="active" href="movies_on_ott_platforms.html">Movies OTT Input</a>
+                        <a href="director_input_page.html">Directors Input</a>
+                        <a href="movies_has_directors_relationship.html">Movie Director Relationship</a>
+                        <a href="movies_has_actors_relationship.html">Movie Actor Relationship</a>
+                        <a href="big_screen_shows_on_relationship.html">Big Screen Shows on Relationship</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Search Forms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Top_movies_by_genre.html">Top movies by genre!</a>
+                        <a href="Directors_with_more_than_one_movie.html">Directors with more than one movie!</a>
+                        <a href="actors_awards.html">Actors/Actresses who have won awards!</a>
+                    </div>
+                </div>
+
+                <a href="/movie_profiles/">Movie Profiles</a>
+                <a href="maintenance.html">Maintenance</a>
+            </ul>
+        </div>
+        <ul>
+            <a href="/login/" class="login-signup">Login/Sign Up</a>
+        </ul>
+    </div>
+
+    <section id="movies-on-ott-input">
+        <h2>Movies on OTT Platform Input Page</h2>
+        <div class="movies-input-form">
+            <form action="process_movies_on_ott_input.php" method="post">
+                <label for="platformName">Platform Name:</label>
+                <input type="text" name="platformName" required>
+
+                <label for="releasedYear">Released Year:</label>
+                <input type="number" name="releasedYear" required>
+
+                <label for="genre">Genre:</label>
+                <input type="text" name="genre" required>
+
+                <label for="title">Title:</label>
+                <input type="text" name="title" required>
+
+                <label for="rating">Rating:</label>
+                <input type="text" name="rating" required>
+
+                <label for="top10InCountry">Top 10 in Your Country:</label>
+                <div class="radio-group">
+                <label><input type="radio" name="top10InCountry" value="yes"> Yes</label>
+                <label><input type="radio" name="top10InCountry" value="no"> No</label>
+        </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <div class="footer">
+        <a>
+            <br>
+            <p>This website is student lab work and does not necessarily reflect Jacobs University Bremen opinions. </br>
+            Jacobs University Bremen does not endorse this site, nor is it checked by Jacobs University Bremen regularly, nor is it part of the official Jacobs University Bremen web presence.</p>
+            <p>For each external link existing on this website, we initially have checked that the target page does not contain contents which is illegal wrt. German jurisdiction. </br>
+            However, as we have no influence on such contents, this may change without our notice. Therefore we deny any responsibility for the websites referenced through our external links from here.</p>
+            <p>No information conflicting with GDPR is stored in the server.</p>
+            <p>2023 HRMovie</p>
+            <br>
+        </a>
+    </div>
+</body>
+</html>

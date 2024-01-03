@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HRMovie - Movie Actor Relationship Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Helvetica;
+        }
+
+        #relationship-form {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <div class="logo">
+            <img src="img/logo.png" height="50px">
+        </div>
+        <div class="centered-nav">
+            <ul>
+                <a href="home.html">Home</a>
+                <a href="/about/">About</a>
+                <a href="imprint.html">Imprint</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Input Forms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="user_input_page.html">Users Input</a>
+                        <a href="actors_input_page.html">Actors Input</a>
+                        <a href="movies_input_page.html">Movies Input</a>
+                        <a href="cinemas_input_page.html">Cinemas Input</a>
+                        <a href="movies_on_ott_platforms.html">Movies OTT Input</a>
+                        <a href="director_input_page.html">Directors Input</a>
+                        <a href="movies_has_directors_relationship.html">Movie Director Relationship</a>
+                        <a class="active" href="movies_has_actors_relationship.html">Movie Actor Relationship</a>
+                        <a href="big_screen_shows_on_relationship.html">Big Screen Shows on Relationship</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Search Forms
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Top_movies_by_genre.html">Top movies by genre!</a>
+                        <a href="Directors_with_more_than_one_movie.html">Directors with more than one movie!</a>
+                        <a href="actors_awards.html">Actors/Actresses who have won awards!</a>
+                    </div>
+                </div>
+
+                <a href="/movie_profiles/">Movie Profiles</a>
+                <a href="maintenance.html">Maintenance</a>
+            </ul>
+        </div>
+        <ul>
+            <a href="/login/" class="login-signup">Login/Sign Up</a>
+        </ul>
+    </div>
+
+    <section id="relationship-form">
+        <h2>Movie Actor Relationship Form</h2>
+        <div class="relationship-form">
+            <form action="process_Movie_Actor_relationship.php" method="post">
+                <label for="movie">Select a Movie:</label>
+                <select name="movie" required>
+                    <option value="1">The Shawshank Redemption</option>
+                    <option value="2">The Godfather</option>
+                    <option value="3">The Dark Knight</option>
+                    <option value="4">Pulp Fiction</option>
+                    <option value="5">The Lord of the Rings: The Return of the King</option>
+                    <option value="6">Schindlers List</option>
+                    <option value="7">Fight Club</option>
+                    <option value="8">Forrest Gump</option>
+                    <option value="9">Inception</option>
+                    <option value="10">The Matrix</option>
+                    <option value="11">The Silence of the Lambs</option>
+                    <option value="12">The Departed</option>
+                    <option value="13">Gladiator</option>
+                    <option value="14">The Usual Suspects</option>
+                    <option value="15">Saving Private Ryan</option>
+                    <option value="16">The Green Mile</option>
+                    <option value="17">The Pianist</option>
+                    <option value="18">The Social Network</option>
+                    <option value="19">The Grand Budapest Hotel</option>
+                    <option value="20">La La Land</option>
+                   
+                </select>
+
+                <label for="actor">Select a Actor:</label>
+                <select name="actor" required>
+                    <option value="1">Actor 1</option>
+                    <option value="2">Actor 2</option>
+                    <option value="3">Actor 3</option>
+                    <option value="4">Actor 4</option>
+                    <option value="5">Actor 5</option>
+                    <option value="6">Actor 6</option>
+                    <option value="7">Actor 7</option>
+                    <option value="8">Actor 8</option>
+                    <option value="9">Actor 9</option>
+                    <option value="10">Actor 10</option>
+                    <option value="11">Actor 11</option>
+                    <option value="12">Actor 12</option>
+                    <option value="13">Actor 13</option>
+                    <option value="14">Actor 14</option>
+                    <option value="15">Actor 15</option>
+                    <option value="16">Actor 16</option>
+                    <option value="17">Actor 17</option>
+                    <option value="18">Actor 18</option>
+                    <option value="19">Actor 19</option>
+                    <option value="20">Actor 20</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <div class="footer">
+        <a>
+            <br>
+            <p>This website is student lab work and does not necessarily reflect Jacobs University Bremen opinions. </br>
+            Jacobs University Bremen does not endorse this site, nor is it checked by Jacobs University Bremen regularly, nor is it part of the official Jacobs University Bremen web presence.</p>
+            <p>For each external link existing on this website, we initially have checked that the target page does not contain contents which is illegal wrt. German jurisdiction. </br>
+            However, as we have no influence on such contents, this may change without our notice. Therefore we deny any responsibility for the websites referenced through our external links from here.</p>
+            <p>No information conflicting with GDPR is stored in the server.</p>
+            <p>2023 HRMovie</p>
+            <br>
+        </a>
+    </div>
+</body>
+</html>
+
